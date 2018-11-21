@@ -11862,11 +11862,19 @@ Array ActionHappened --> 0 0 0 0 0;
 ! When play begins:
 [ R_799 ;
     if (debug_rules) DB_Rule(R_799, 799);
-    ! [2: say ~Introduction.[line break]The story starts with a little girl named Snow White. She was the prettiest and fairest girl in the land.~]
+    ! [2: say ~Introduction.[line break]The story starts with a young woman named Snow White. She was the prettiest and fairest woman in the land.[line break]The Queen of the land had a magic mirror which allowed her to ask it questions and it had to answer truthfully. [line break]The queen asked the mirror who the fairest and prettiest in all of the land was; the mirror replied with, 'a young woman named Snow White is the fairest of them all people say'.[line break]The Queen was jealous of this and wanted to be the fairest in all of the land so she ordered a huntsman to kill Snow White and to bring back her tongue and heart as proof, if he achieved this she would reward him handsomely.[line break]With his new orders the huntsman took Snow White into the forest with the intention of killing her.~]
     say__p=1;! [3: ~Introduction.~]
     ParaContent(); print "Introduction.";! [4: line break]
-    ParaContent(); new_line;! [5: ~The story starts with a little girl named Snow White. She was the prettiest and fairest girl in the land.~]
-    ParaContent(); print "The story starts with a little girl named Snow White. She was the prettiest and fairest girl in the land."; new_line; .L_Say1; .L_SayX1;rfalse;
+    ParaContent(); new_line;! [5: ~The story starts with a young woman named Snow White. She was the prettiest and fairest woman in the land.~]
+    ParaContent(); print "The story starts with a young woman named Snow White. She was the prettiest and fairest woman in the land.";! [6: line break]
+    ParaContent(); new_line;! [7: ~The Queen of the land had a magic mirror which allowed her to ask it questions and it had to answer truthfully. ~]
+    ParaContent(); print "The Queen of the land had a magic mirror which allowed her to ask it questions and it had to answer truthfully. ";! [8: line break]
+    ParaContent(); new_line;! [9: ~The queen asked the mirror who the fairest and prettiest in all of the land was; the mirror replied with, 'a young woman named Snow White is the fairest of them all people say'.~]
+    ParaContent(); print "The queen asked the mirror who the fairest and prettiest in all of the land was; the mirror replied with, ~a young woman named Snow White is the fairest of them all people say~.";! [10: line break]
+    ParaContent(); new_line;! [11: ~The Queen was jealous of this and wanted to be the fairest in all of the land so she ordered a huntsman to kill Snow White and to bring back her tongue and heart as proof, if he achieved this she would reward him handsomely.~]
+    ParaContent(); print "The Queen was jealous of this and wanted to be the fairest in all of the land so she ordered a huntsman to kill Snow White and to bring back her tongue and heart as proof, if he achieved this she would reward him handsomely.";! [12: line break]
+    ParaContent(); new_line;! [13: ~With his new orders the huntsman took Snow White into the forest with the intention of killing her.~]
+    ParaContent(); print "With his new orders the huntsman took Snow White into the forest with the intention of killing her."; new_line; .L_Say1; .L_SayX1;rfalse;
 ];
 ! ----------------------------------------------------------------------------------------------------
 
